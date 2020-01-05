@@ -1,2 +1,4 @@
 # portfolio-reactjs
-Portfolio website created on react.js for training
+Website created for a traning. Feel free to check.
+
+This project uses React.js
