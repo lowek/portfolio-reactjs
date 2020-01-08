@@ -1,0 +1,126 @@
+.contact__wrapper {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+
+  &__row {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    &__headline {
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    &__form {
+      max-width: 560px;
+      width: 100%;
+
+      &__label {
+        color: #747d89;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        width: 100%;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+
+        & span {
+          padding: 10px;
+        }
+
+        & input[type="text"],
+        input[type="email"] {
+          background-color: transparent;
+          width: 100%;
+          padding: 20px 10px;
+          border: 0;
+          border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+          color: white;
+          font-weight: 700;
+
+          &:focus,
+          :hover {
+            border-bottom-color: white;
+          }
+        }
+
+        &__submit {
+          margin-top: 30px;
+          position: relative;
+          text-align: right;
+          float: left;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          &:hover {
+            transform: translateX(5px);
+          }
+
+          & button {
+            background-color: transparent;
+            border: 0;
+            text-transform: uppercase;
+            font-weight: 800;
+            padding: 10px 72px 10px 10px;
+            border-radius: 5px;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            font-size: 0.8rem;
+            z-index: 0;
+            color: white;
+            cursor: pointer;
+          }
+
+          &:after {
+            content: "\2192";
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transform: translateY(2px);
+            transform: translateX(5px);
+            padding-bottom: 2px;
+            width: 64px;
+            height: 64px;
+            background-color: #223dfb;
+            border-radius: 50%;
+            font-size: 1.8rem;
+            z-index: 1;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &__col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 30px 30px;
+      width: 15%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 0px 0 30px;
+      }
+    }
+  }
+}

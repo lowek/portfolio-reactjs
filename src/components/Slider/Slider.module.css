@@ -1,0 +1,159 @@
+.slider__wrapper {
+  width: 100%;
+  height: 100vh;
+  padding-top: 6vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: -1;
+  position: relative;
+  position: relative;
+}
+
+.slider__wrapper__h1 {
+  font-family: proxima-nova, sans-serif;
+  font-size: 7.2vw;
+  -webkit-transform: translateY(-10vh);
+          transform: translateY(-10vh);
+  padding: 0 5vw 0 10vw;
+  position: relative;
+  -webkit-animation: opacity 1s ease-in 0s;
+          animation: opacity 1s ease-in 0s;
+  overflow: hidden;
+}
+
+.slider__wrapper__h1 span {
+  background: -webkit-gradient(linear, left top, right top, from(#223dfb), color-stop(50%, #d42869));
+  background: linear-gradient(to right, #223dfb 0%, #d42869 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slider__wrapper__h1:before {
+  -webkit-animation: animeSlideBg 1s ease-in 0s;
+          animation: animeSlideBg 1s ease-in 0s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  -webkit-transform: translate3d(-100%, 0, 0) translate3d(-1px, 0, 0);
+  transform: translate3d(-100%, 0, 0) translate3d(-1px, 0, 0);
+  -webkit-transition: transform 0.7s cubic-bezier(0.7, 0, 0.3, 1);
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: transform 0.7s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: transform 0.7s cubic-bezier(0.7, 0, 0.3, 1), -webkit-transform 0.7s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .slider__wrapper__h1 {
+    font-size: 62px;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes bgBlue {
+  from {
+    right: -50%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes bgBlue {
+  from {
+    right: -50%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animeSlideBg {
+  from {
+  }
+  to {
+    -webkit-transform: translate3d(100%, 0, 0) translate3d(1px, 0, 0);
+    transform: translate3d(100%, 0, 0) translate3d(1px, 0, 0);
+  }
+}
+
+@keyframes animeSlideBg {
+  from {
+  }
+  to {
+    -webkit-transform: translate3d(100%, 0, 0) translate3d(1px, 0, 0);
+    transform: translate3d(100%, 0, 0) translate3d(1px, 0, 0);
+  }
+}
+
+@-webkit-keyframes textAnime {
+  from {
+    padding-left: 50%;
+  }
+  to {
+    padding-left: 0%;
+  }
+}
+
+@keyframes textAnime {
+  from {
+    padding-left: 50%;
+  }
+  to {
+    padding-left: 0%;
+  }
+}
+
+@-webkit-keyframes slideTop {
+  0% {
+    bottom: -40px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    bottom: -40px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 20px;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=Slider.module.css.map */

@@ -1,0 +1,60 @@
+{
+  "name": "www",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://lowek.pl/work/testowe/",
+  "start_url": "http://lowek.pl/work/testowe/",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "cursor-dot": "^1.0.4",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-cookie": "^3.1.2",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.8",
+    "react-transition-group": "^1.2.1",
+    "tilt.js": "^1.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "emailjs-com": "^2.4.1",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --config .prettierrc --write",
+      "esling --fix",
+      "git add"
+    ]
+  }
+}

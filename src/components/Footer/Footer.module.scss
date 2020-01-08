@@ -1,0 +1,113 @@
+.footer {
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  color: white;
+
+  &__wrapper {
+    width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    &__copyright {
+      font-size: 0.6rem;
+      color: #747d89;
+      text-transform: uppercase;
+      display: block;
+      text-align: center;
+    }
+
+    &__menu {
+      width: 100%;
+      margin: 0;
+      padding: 5vh 5vw;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+
+      & li {
+        display: inline;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          transform: translateY(-10px);
+        }
+
+        & a {
+          color: #d42869;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &__contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+
+      &__headline {
+        font-size: 26px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 1.5;
+        color: white;
+        text-align: center;
+      }
+
+      &__button {
+        padding: 10px 30px;
+        color: white;
+        font-size: 18px;
+        position: relative;
+        border: 2px solid #333;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          background: #333;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__info {
+      background: #eaeaea;
+      color: #333;
+      padding: 20px;
+
+      & .footer__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__col {
+      width: 100%;
+      margin: 0 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+
+        & h1 {
+          margin: 40px 0;
+        }
+      }
+    }
+  }
+}

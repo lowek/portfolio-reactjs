@@ -1,0 +1,51 @@
+.clients__wrapper {
+    width: 100%;
+    padding: 0 0 5vh;
+    display: block;
+    background: black;
+
+    @media screen and (max-width: 768px) {
+        padding: 5vh 0;
+    }
+
+    &__row {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        &__col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 30px 30px;
+            width: 15%;
+
+            & img {
+                max-width: 180px;
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                transition: all 0.3s ease-in-out;
+                opacity: 0.5;
+
+                &:hover {
+                    -webkit-filter: grayscale(0%);
+                    filter: grayscale(0%);
+                    opacity: 0.9;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin: 0px 0 30px;
+            }
+        }
+    }
+}
